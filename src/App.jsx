@@ -1,9 +1,12 @@
 import './App.scss';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="container">
-      <section>Hero</section>
+      <section>
+        <Navbar/>
+      </section>
       <section>Parallax</section>
       <section>Services</section>
       <section>Parallax</section>      
