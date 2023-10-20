@@ -1,10 +1,11 @@
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
+import Test from './Test';
 
 function App() {
   return (
     <div className="container">
-      <section>
+      {/* <section>
         <Navbar/>
       </section>
       <section>Parallax</section>
@@ -13,7 +14,8 @@ function App() {
       <section>Portfolio1</section>      
       <section>Portfolio2</section>      
       <section>Portfolio3</section>      
-      <section>Contact</section>      
+      <section>Contact</section>       */}
+      <Test/>
     </div>
   );
 }

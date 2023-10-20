@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Navbar.scss"
-import Facebook from '../../../public/img/facebook.png.png'
-import Instagram from '../../../public/img/instagram.png.png'
-import Github from '../../../public/img/github.png.png'
-import Telegram from '../../../public/img/telegram.png.png'
+import Facebook from '../../img/facebook.png'
+import Instagram from '../../img/instagram.png'
+import Github from '../../img/github.png'
+import Telegram from '../../img/telegram.png'
 
 function Navbar() {
   return (
