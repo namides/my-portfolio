@@ -1,9 +1,16 @@
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="container">
+      <section>Hero</section>
+      <section>Parallax</section>
+      <section>Services</section>
+      <section>Parallax</section>      
+      <section>Portfolio1</section>      
+      <section>Portfolio2</section>      
+      <section>Portfolio3</section>      
+      <section>Contact</section>      
     </div>
   );
 }
