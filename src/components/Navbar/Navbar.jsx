@@ -11,16 +11,21 @@ import Hero from "../Hero/Hero";
 function Navbar() {
   return (
     <div className="navbar">
-      <Sidebar/>
+      <Sidebar />
       <div className="wrapper">
-        <motion.span 
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{opacity: 1, scale: 1}}
-        transition={{duration:0.5}}
+        <motion.span
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
         >
           nami.des
         </motion.span>
-        <div className="social">
+        <motion.div
+          className="social"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <a href="https://www.facebook.com/marketplace/profile/61550347703578/?ref=permalink&tab=listings&mibextid=9R9pXO">
             <img src={Facebook} alt="" />
           </a>
@@ -33,9 +38,9 @@ function Navbar() {
           <a href="https://t.me/nami_des">
             <img src={Telegram} alt="" />
           </a>
-        </div>
+        </motion.div>
       </div>
-      <Hero/>
+      <Hero />
     </div>
   );
 }
