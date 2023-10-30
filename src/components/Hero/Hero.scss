@@ -1,0 +1,25 @@
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background-color: liner-gradient(100deg, #0c0c1d, #111132);
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+
+  .wrapper{
+    max-width: 1366px;
+    height: 100px;
+    margin: auto;
+  }
+
+  .imageContainer {
+
+    img {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background-position: center;
+      // overflow: hidden;
+    }
+  }
+}

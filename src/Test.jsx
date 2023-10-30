@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 function Test() {
+  const variants = {
+    visible: (i) => ({
+      opacity: 1,
+      x: 100,
+      transition: { delay:  i * 0.3 },
+    }),
+    hidden: { opacity: 0 },
+  };
+
+  const items =["item1", "item2", "item3", "item4"]
+
   return (
     <div className="course">
-      <motion.div
-        className="box"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 0, scale: 1, x:200, y:500 }}
-        transition={{ duration: 2 }}
-      ></motion.div>
+      <motion.ul initial="hidden" animate="visible" variants={variants}>
+        {items.map((item,i) => (
+          <motion.li variants={variants} key={item} custom={i}>
+            {item}
+          </motion.li>
+        ))}
+      </motion.ul>
     </div>
   );
 }
